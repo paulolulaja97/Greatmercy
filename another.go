@@ -68,7 +68,7 @@ func main() {
 
 		}
 		if data[i] == "(low," {
-			v := data[i+1][0]
+			v := strings.TrimRight(data[i+1], ")")
 			v_i, _ := strconv.Atoi(string(v))
 			for a := v_i; a > 0; a-- {
 				data[i-a] = strings.ToLower(data[i-a])
@@ -139,7 +139,7 @@ func main() {
 	}
 
 	value := strings.Join(data, " ")
-	os.WriteFile(output, []byte(value+"\n"), 0664)
+	os.WriteFile(output, []byte(value), 0664)
 
 }
 
