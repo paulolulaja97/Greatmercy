@@ -7,13 +7,14 @@ import (
 )
 
 func main() {
-	fonts, err := os.ReadFile("shadow.txt")
-	// fonts, err := os.ReadFile("thinkertoy.txt")
+	// fonts, err := os.ReadFile("shadow.txt")
+	fonts, err := os.ReadFile("thinkertoy.txt")
 	// fonts, err := os.ReadFile("standard.txt")
 
 	if err != nil {
 		fmt.Println("Error reading file", err)
 	}
+	// use to deal with the thinkertoy
 	f := strings.ReplaceAll(string(fonts), "\r\n", "\n")
 
 	chrs := strings.Split(f, "\n")
