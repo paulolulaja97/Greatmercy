@@ -13,7 +13,7 @@ func main() {
 	option := os.Args[1]
 	str := os.Args[2]
 	banner := os.Args[3]
-	if len(os.Args) < 3 || len(os.Args) > 4 {
+	if len(os.Args) < 1 || len(os.Args) > 4 {
 		fmt.Println("Incomplet")
 	}
 	words, err := os.ReadFile(banner + ".txt")
