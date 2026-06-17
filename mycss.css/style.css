@@ -1,0 +1,38 @@
+body {
+    background-color: aqua;
+}
+textarea {
+    border: 0in;
+    color: red;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+pre {
+    border: 0in;
+    color: green;
+    background-color: blue;
+    justify-content: right;
+    justify-self: unset;
+    justify-items: end;
+
+    
+}
+/* border {
+    width: 25;
+    break-inside: avoid-column;
+    background-image: -moz-repeating-radial-gradient();
+    size: 0ch;
+}
+label {
+    clip-path: inset();
+    justify-content: center;
+
+}
+padding {
+    line-height: 0ch;
+    align-items: center;
+    justify-content: flex-start;
+    gap: unset;
+    flex-direction: row-reverse;
+} */

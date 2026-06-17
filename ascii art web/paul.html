@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>GREATMERCY FASHION HOUSE</h1><br><br>
+        <h2>Welcome to our site</h2>
+        <h4>
+           <form action="/search" method="GET"></form>
+           <input type="search" name="q" placeholder="search for shoe" aria-label="search">
+           <button type="submit">search</button>
+        
+           <a href="/help" class="nav-btn">Help</a>
+           <a href="/login" class="nav-btn">My Account</a>
+           <button type="button" id="cart-btn" class="nav-btn">
+           cart (<span id="cart-count">0</span>)
+           
+
+
+        </h4>
+        <div>
+        <form action="/ascii" method="POST">
+            <label for="in">Enter text: </label>
+            <textarea id="in" name="text" placeholder="Enter text"></textarea>
+            <!-- <selectedcontent id="in" name="select" chose="chose your banner"></selectedcontent> -->
+            <select name="banner">
+                <option value="standard">standard</option>
+                <option value="shadow">shadow</option>
+                <option value="thinkertoy">thinkertoy</option>
+            </select>
+            <button>
+                submit
+            </button>
+        </form>
+        </div>
+        <div>
+        <pre>{{.}}</pre>
+        </div>    
+    </body>
+</html>

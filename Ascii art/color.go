@@ -106,31 +106,4 @@ func main() {
 	// fmt.Println("\033[38;5;208m" + "good" + "\033[0m")
 }
 
-func isAscii(words []byte, str, substr, code string, indexToColour []int) string {
-
-	f := strings.ReplaceAll(string(words), "\r\n", "\n")
-
-	var container strings.Builder
-	chrs := strings.Split(f, "\n")
-	splited_str := strings.Split(str, "\\n")
-
-	for _, word := range splited_str {
-		if word == "" {
-			container.WriteString("\n")
-			continue
-		}
-		for i := 0; i < 8; i++ {
-			for j, ch := range word {
-				start_index := int(9*(ch-32) + 1)
-				if substr == "" || slices.Contains(indexToColour, j) {
-					container.WriteString(code + chrs[start_index+i] + "\033[35m")
-				} else {
-					container.WriteString(chrs[start_index+i])
-				}
-			}
-			container.WriteString("\n")
-		}
-	}
-
-	return container.String()
-}
+ 

@@ -59,7 +59,7 @@ func isJustify(data, str, substr, code string, indexToColour []int, text []byte,
 		} else {
 			art = isAsciiArt(text, str, substr, code, indexToColour)
 		}
-		splitted_art := strings.Split(strings.TrimSuffix(art, "\n"), "\n")
+		splitted_art := strings.Split(strings.Trim(art, "\n"), "\n")
 		if data == "right" {
 			for _, line := range splitted_art {
 				fmt.Printf("%*s\n", terminalWidth, line)

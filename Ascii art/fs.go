@@ -34,7 +34,7 @@ func main() {
 			fmt.Println()
 			continue
 		}
-		// this deals with the ascii art looping it until the index is equal to 8
+		// this deals with the ascii art looping it until the index is equal to 7
 		for i := 0; i < 8; i++ {
 			// this is the inner loop that deals with the rang of the words you want to print from the ascii table
 			for _, ch := range word {
@@ -43,6 +43,7 @@ func main() {
 				start_index := int(9*(ch-32) + 1)
 				fmt.Print(f[start_index+i])
 			}
+			// This takes the next row printing to the next line
 			fmt.Println()
 		}
 	}

@@ -1,0 +1,49 @@
+body {
+    background-color: aqua;
+    content: icon;
+    font-style: italic;
+    font-size: larger;
+    align-items: center;
+    border-color: blue;
+    display:grid;
+    enable-background:0cqi;
+    justify-content: center;
+}
+h4 {
+    padding: 0ch;
+}
+textarea {
+    font-size: larger;
+    color: gold;
+    background-color:whitesmoke;
+    /* filter: brightness(flex); */
+    text-box-edge:uncounter-reset: green;set;
+    justify-content: center;
+    /* align-items: center; */
+    justify-items: center;
+}
+selectcontent {
+    color: brown;
+    font-style: oblique;
+    stroke-opacity: inherit;
+    shape-margin: 0svw;
+    shape-image-threshold: initial;
+}
+label {
+    background-color: aliceblue;
+    color: green;
+    font-size: medium;
+}
+
+pre {
+    color: gold;
+    justify-content:baseline;
+    font-weight: 200;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+}
+/* head {
+    border-color: brown;
+    block-size: auto;
+    
+} */
